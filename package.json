@@ -1,0 +1,62 @@
+{
+  "name": "nest-morgan",
+  "version": "0.1.0",
+  "description": "Morgan Module for Nest Framework",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp *.md dist && cp LICENSE dist && cp package.json dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mentos1386/nest-morgan.git"
+  },
+  "keywords": [
+    "nestjs",
+    "nest",
+    "morgan",
+    "logging",
+    "module"
+  ],
+  "author": "Tine Jozelj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mentos1386/nest-morgan/issues"
+  },
+  "homepage": "https://github.com/mentos1386/nest-morgan#readme",
+  "dependencies": {
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^5.1.0",
+    "@nestjs/core": "^5.1.0",
+    "@nestjs/testing": "^5.1.0",
+    "@types/jest": "^23.1.6",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.5.2",
+    "jest": "^23.4.1",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2",
+    "supertest": "^3.1.0",
+    "ts-jest": "^23.0.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

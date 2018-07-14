@@ -1,0 +1,1 @@
+export const MORGAN_PROVIDER = 'MORGAN_PROVIDER';
