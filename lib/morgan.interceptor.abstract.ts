@@ -24,17 +24,14 @@ export abstract class AbstractMorganInterceptor implements NestInterceptor {
     const httpRequest = context.switchToHttp().getRequest();
     const httpResponse = context.switchToHttp().getResponse();
 
-    // If is here just to satisfy TypeScript
+    //If is here just to satisfy TypeScript
     if (typeof this.format === 'string') {
-      this.morganInstance(this.format, this.options)(httpRequest, httpResponse, this.handleError)
+      this.morganInstance(this.format, this.options)(httpRequest, httpResponse, console.error)
     } else {
-      this.morganInstance(this.format, this.options)(httpRequest, httpResponse, this.handleError)
+      this.morganInstance(this.format, this.options)(httpRequest, httpResponse, console.error)
     }
 
     return call$;
   }
 
-  private handleError(err: any) {
-    throw err
-  }
 }
