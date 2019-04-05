@@ -8,6 +8,8 @@
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/v/nest-morgan.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/l/nest-morgan.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/dm/nest-morgan.svg" alt="NPM Downloads" /></a>
+<a href="https://travis-ci.org/mentos1386/nest-morgan"><img src="https://travis-ci.org/mentos1386/nest-morgan.svg?branch=master" alt="Travis build" /></a>
+<a href="https://coveralls.io/github/mentos1386/nest-morgan"><img src="https://coveralls.io/repos/github/mentos1386/nest-morgan/badge.svg?branch=master" alt="Coveralls" /></a>
 </p>
 
 ## Description
