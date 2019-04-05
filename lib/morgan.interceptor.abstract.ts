@@ -1,6 +1,7 @@
 import {
   ExecutionContext, Inject, Injectable,
   NestInterceptor,
+  CallHandler,
 } from '@nestjs/common';
 import { Observable } from 'rxjs/Observable';
 import * as morgan from 'morgan';
@@ -19,7 +20,7 @@ export abstract class AbstractMorganInterceptor implements NestInterceptor {
 
   intercept(
     context: ExecutionContext,
-    call$: Observable<any>,
+    next: CallHandler<any>,
   ): Observable<any> {
     const httpRequest = context.switchToHttp().getRequest();
     const httpResponse = context.switchToHttp().getResponse();
@@ -31,7 +32,7 @@ export abstract class AbstractMorganInterceptor implements NestInterceptor {
       this.morganInstance(this.format, this.options)(httpRequest, httpResponse, console.error)
     }
 
-    return call$;
+    return next.handle();
   }
 
 }

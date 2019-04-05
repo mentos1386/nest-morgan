@@ -19,6 +19,10 @@ This's a [Morgan](https://github.com/expressjs/morgan) module for [Nest](https:/
 $ npm i --save nest-morgan morgan @types/morgan
 ```
 
+### Versions
+ * **1.x** Is for Nest v6.x
+ * **0.x** Is for Nest v5.x
+
 ## Quick Start
 
 
