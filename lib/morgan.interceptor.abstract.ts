@@ -3,7 +3,7 @@ import {
   NestInterceptor,
   CallHandler,
 } from '@nestjs/common';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import * as morgan from 'morgan';
 import { MORGAN_PROVIDER } from './morgan.constants';
 
