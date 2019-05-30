@@ -1,6 +1,6 @@
 {
   "name": "nest-morgan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Morgan Module for Nest Framework",
   "directories": {
     "lib": "lib"
