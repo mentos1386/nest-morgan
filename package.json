@@ -31,22 +31,22 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "@nestjs/common": "^6.0.5",
-    "@nestjs/core": "^6.0.5",
-    "@nestjs/platform-express": "^6.0.5",
-    "@nestjs/testing": "^6.0.5",
-    "@types/jest": "^24.0.11",
+    "@nestjs/common": "^7.4.4",
+    "@nestjs/core": "^7.4.4",
+    "@nestjs/platform-express": "^7.4.4",
+    "@nestjs/testing": "^7.4.4",
+    "@types/jest": "^26.0.14",
     "@types/morgan": "^1.7.35",
     "@types/node": "^11.13.0",
     "coveralls": "^3.0.3",
-    "jest": "^24.7.1",
+    "jest": "^26.4.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
     "supertest": "^4.0.2",
-    "ts-jest": "^24.0.1",
+    "ts-jest": "^26.4.1",
     "ts-node": "^8.0.3",
-    "typescript": "^3.4.1"
+    "typescript": "^3.9.7"
   },
   "jest": {
     "transform": {
