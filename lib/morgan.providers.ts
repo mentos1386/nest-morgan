@@ -1,10 +1,11 @@
 import { MORGAN_PROVIDER } from "./morgan.constants";
-import * as morgan from "morgan";
+import { Morgan } from "morgan";
+import morgan = require("morgan");
 
 export const morganProviders = [
   {
     provide: MORGAN_PROVIDER,
-    useFactory: (): morgan.Morgan<any, any> => {
+    useFactory: (): Morgan<any, any> => {
       return morgan;
     },
   },
