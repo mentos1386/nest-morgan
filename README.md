@@ -11,6 +11,11 @@
 <a href="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml"><img src="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml/badge.svg?branch=master" alt="Github Actions - Test" /></a>
 </p>
 
+### Not activly maintained!
+
+This module is not activly maintainer. Any PR's will be reviewd/merged/released. But i don't
+plan to work on, or add any new functionality to this module.
+
 ## Description
 
 This's a [Morgan](https://github.com/expressjs/morgan) module for [Nest](https://github.com/nestjs/nest).

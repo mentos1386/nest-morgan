@@ -6,16 +6,16 @@ import {
   CallHandler,
 } from "@nestjs/common";
 import { Observable } from "rxjs";
-import * as morgan from "morgan";
+import { Options, FormatFn, Morgan } from "morgan";
 import { MORGAN_PROVIDER } from "./morgan.constants";
 
 @Injectable()
 export abstract class AbstractMorganInterceptor implements NestInterceptor {
-  protected abstract readonly options: morgan.Options<any, any>;
-  protected abstract readonly format: string | morgan.FormatFn;
+  protected abstract readonly options: Options<any, any>;
+  protected abstract readonly format: string | FormatFn;
 
   constructor(
-    @Inject(MORGAN_PROVIDER) private morganInstance: morgan.Morgan<any, any>
+    @Inject(MORGAN_PROVIDER) private morganInstance: Morgan<any, any>
   ) {}
 
   intercept(
