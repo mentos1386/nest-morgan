@@ -13,6 +13,7 @@
 </p>
 
 ## Description
+
 This's a [Morgan](https://github.com/expressjs/morgan) module for [Nest](https://github.com/nestjs/nest).
 
 ## Installation
@@ -22,11 +23,12 @@ $ npm i --save nest-morgan morgan @types/morgan
 ```
 
 ### Versions
- * **1.x** Is for Nest v6.x
- * **0.x** Is for Nest v5.x
+
+- **2.x** Is for Nest v7.x
+- **1.x** Is for Nest v6.x
+- **0.x** Is for Nest v5.x
 
 ## Quick Start
-
 
 ### Include Module
 
@@ -34,15 +36,13 @@ $ npm i --save nest-morgan morgan @types/morgan
 
 ```ts
 @Module({
-    imports: [
-        ...
-        MorganModule.forRoot(),
-    ]
+  imports: [...MorganModule.forRoot()],
 })
 export class ApplicationModule {}
 ```
 
 #### Global
+
 If you want to set up interceptor as global, you have to follow Nest
 instructions [here](https://docs.nestjs.com/interceptors). Something like
 this:
@@ -50,18 +50,16 @@ this:
 > app.module.ts
 
 ```ts
-import { Module } from '@nestjs/common';
-import { APP_INTERCEPTOR } from '@nestjs/core';
-import { MorganModule, MorganInterceptor } from 'nest-morgan';
+import { Module } from "@nestjs/common";
+import { APP_INTERCEPTOR } from "@nestjs/core";
+import { MorganModule, MorganInterceptor } from "nest-morgan";
 
 @Module({
-  imports: [
-      MorganModule.forRoot(),
-  ],
+  imports: [MorganModule.forRoot()],
   providers: [
     {
       provide: APP_INTERCEPTOR,
-      useClass: MorganInterceptor('combined'),
+      useClass: MorganInterceptor("combined"),
     },
   ],
 })
@@ -69,6 +67,7 @@ export class ApplicationModule {}
 ```
 
 ### Using Interceptor
+
 > app.controller.ts
 
 ```ts
