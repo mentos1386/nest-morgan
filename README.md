@@ -8,8 +8,7 @@
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/v/nest-morgan.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/l/nest-morgan.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/package/nest-morgan"><img src="https://img.shields.io/npm/dm/nest-morgan.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/mentos1386/nest-morgan"><img src="https://travis-ci.org/mentos1386/nest-morgan.svg?branch=master" alt="Travis build" /></a>
-<a href="https://coveralls.io/github/mentos1386/nest-morgan"><img src="https://coveralls.io/repos/github/mentos1386/nest-morgan/badge.svg?branch=master" alt="Coveralls" /></a>
+<a href="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml"><img src="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml/badge.svg?branch=master" alt="Github Actions - Test" /></a>
 </p>
 
 ## Description
@@ -25,6 +24,7 @@ $ npm i --save nest-morgan morgan @types/morgan
 ### Versions
 
 - **2.x** Is for Nest v7.x
+  - Remove the need to use `MorganModule.forRoot()` [#17](https://github.com/mentos1386/nest-morgan/issues/17).
 - **1.x** Is for Nest v6.x
 - **0.x** Is for Nest v5.x
 
@@ -36,7 +36,7 @@ $ npm i --save nest-morgan morgan @types/morgan
 
 ```ts
 @Module({
-  imports: [...MorganModule.forRoot()],
+  imports: [MorganModule],
 })
 export class ApplicationModule {}
 ```
@@ -55,7 +55,7 @@ import { APP_INTERCEPTOR } from "@nestjs/core";
 import { MorganModule, MorganInterceptor } from "nest-morgan";
 
 @Module({
-  imports: [MorganModule.forRoot()],
+  imports: [MorganModule],
   providers: [
     {
       provide: APP_INTERCEPTOR,

@@ -6,7 +6,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp *.md dist && cp LICENSE dist && cp package.json dist",
+    "build": "tsc -p tsconfig.build.json && cp *.md dist && cp LICENSE dist && cp package.json dist",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test": "jest"
   },
@@ -35,9 +35,11 @@
     "@nestjs/core": "^7.6.13",
     "@nestjs/platform-express": "^7.6.13",
     "@nestjs/testing": "^7.6.13",
+    "@types/express": "^4.17.11",
     "@types/jest": "^26.0.20",
     "@types/morgan": "^1.9.2",
     "@types/node": "^14.14.33",
+    "@types/supertest": "^2.0.10",
     "coveralls": "^3.1.0",
     "jest": "^26.6.3",
     "reflect-metadata": "^0.1.13",
