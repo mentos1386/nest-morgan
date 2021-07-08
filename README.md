@@ -11,10 +11,10 @@
 <a href="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml"><img src="https://github.com/mentos1386/nest-morgan/actions/workflows/test.yaml/badge.svg?branch=master" alt="Github Actions - Test" /></a>
 </p>
 
-### Not activly maintained!
+### NOT MAINTAINED!
 
-This module is not activly maintainer. Any PR's will be reviewd/merged/released. But i don't
-plan to work on, or add any new functionality to this module.
+Hey all. **This project is not maintained and archived.** You should check out [iamolegga/nestjs-pino](https://github.com/iamolegga/nestjs-pino) which is maintained
+and with a bunch of cool features.
 
 ## Description
 
